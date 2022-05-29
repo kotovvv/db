@@ -1,0 +1,1 @@
+<p class="shop"><a href="{{ $url}}" target="_blank">{{ $name}} {{$message}}</a></p>

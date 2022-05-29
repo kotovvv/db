@@ -1,0 +1,54 @@
+    .container {
+      max-width: 1200px;
+      margin: auto;
+    }
+.wrp_products {
+display: flex;
+  grid-gap: 20px;
+  flex-wrap: wrap;
+  margin-bottom: 3rem;
+  padding: 15px;
+}
+.product {
+  position: relative;
+  flex: 0 1 245px;
+  padding: 1rem;
+  box-shadow: 0 0 5px #ddd;
+  transition: all .3s ease;
+}
+.product:hover{
+  box-shadow: 0 0 12px grey;
+}
+.product .img {
+  width: auto;
+    max-height: 150px;
+    display: block;
+    margin: auto;
+}
+.product > a{
+  position: absolute;
+  left:0;
+  top:0;
+  width: 100%;
+  height: 100%;
+}
+.product .shop {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  z-index: 1;
+}
+.product .shop a{
+  background: gainsboro;
+  padding: 4px;
+}
+.price span {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+.prices {
+  background: #ddd;
+  margin: 0 -15px;
+  padding: 5px 15px;
+}

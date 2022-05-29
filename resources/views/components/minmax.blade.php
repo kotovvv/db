@@ -1,0 +1,1 @@
+<p class="prices">Цены от {{ $min }} до {{ $max }} грн.</p>
