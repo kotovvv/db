@@ -11,7 +11,7 @@
   header {
     padding: 1rem 0;
     display: flex;
-    grid-gap: 20px;
+    grid-gap: 1.5rem;
     border-bottom: 1px solid #ddd;
   }
 </style>

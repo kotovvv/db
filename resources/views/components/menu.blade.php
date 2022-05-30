@@ -35,6 +35,7 @@ let cat = document.getElementById('cat')
         color: #fff;
         cursor: pointer;
         height: 2rem;
+        border-radius: 6px;
     }
 
     .menu .category {

@@ -20,11 +20,21 @@
     .search {
         display: flex;
         flex: 0 1 100%;
+        grid-gap: 1.5rem;
     }
 
     .search input {
         width: 100%;
         border: 1px solid #ccc;
         height: 2rem;
+        padding-left: 1rem;
+        border-radius: 6px;
+    }
+
+    .search button {
+        padding: 0 20px;
+        cursor: pointer;
+        height: 2rem;
+        border-radius: 6px;
     }
 </style>
