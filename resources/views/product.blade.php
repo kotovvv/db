@@ -7,7 +7,7 @@
     <div>
       <h1 class="name"> {{ $product->product_name}}</h1>
       <p class="price">Цена: <span>{{ $product->price}} грн.</span></p>
-      <x-shops message="(Перейти в магазин)" :product="$product" />
+      <x-shops message="(Перейти в магазин)" color="" :product="$product" />
       @if (strpos($product->same,"',")> 0)
       <x-minmax :same="$product->same" />
       @endif
@@ -17,7 +17,7 @@
 
 
 @isset ($same_products)
-<p class="text-center text-lg">Похожие продукты</p>
+<p class="text-center caption">Похожие продукты</p>
 <div class="wrp_products">
   @foreach ($same_products as $product)
   <x-product :product="$product" />

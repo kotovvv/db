@@ -1,1 +1,1 @@
-<p class="shop"><a href="{{ $url}}" target="_blank">{{ $name}} {{$message}}</a></p>
+<p class="shop"><a style="background:{{ $color}}" href="{{ $url}}" target="_blank">{{ $name}} {{$message}}</a></p>

@@ -10,11 +10,14 @@ display: flex;
   padding: 15px;
 }
 .product {
-  position: relative;
+position: relative;
   flex: 0 1 245px;
-  padding: 1rem;
+  padding: 1rem 1rem 0 1rem;
   box-shadow: 0 0 5px #ddd;
   transition: all .3s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 .product:hover{
   box-shadow: 0 0 12px grey;
@@ -40,8 +43,19 @@ display: flex;
   z-index: 1;
 }
 .product .shop a{
-  background: gainsboro;
+color:#fff;
   padding: 4px;
+}
+.wrp_product .prices {
+  margin: 0;
+}
+.wrp_product .shop a {
+  color: #fff;
+  padding: 5px 1rem;
+}
+.wrp_img {
+  display: flex;
+  flex-direction: column;
 }
 .price span {
   font-size: 1.5rem;
@@ -51,4 +65,15 @@ display: flex;
   background: #ddd;
   margin: 0 -15px;
   padding: 5px 15px;
+}
+.empty{
+  padding: 5px 15px;
+  margin: 0;
+}
+.caption {
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  font-weight: bold;
+  letter-spacing: 0.2rem;
+  text-decoration: underline;
 }
