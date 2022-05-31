@@ -18,9 +18,9 @@ class GeneralController extends Controller
     {
         $res = [];
         $res['s'] = $s;
-        $par = '%' . $s . '%';
+        $par = '%' . mb_strtolower($s) . '%';
         // dd(DB::table('general')->where('product_name', 'like', $par)->toSql());
-        $res['products'] = DB::table('general')->where('product_name', 'like', $par)->get();
+        $res['products'] = DB::table('general')->where(DB::raw('lower(product_name)'), 'like', $par)->get();
         $res['hmfound'] = count($res['products']);
         return view('search', $res);
     }
